@@ -129,8 +129,11 @@ to use bare keys except when absolutely necessary.
 'quoted "value"' = "value"
 ```
 
-A bare key must be non-empty, but an empty quoted key is allowed (though
-discouraged). You cannot use multi-line strings to define quoted keys.
+You cannot use multi-line strings to define quoted keys.
+
+TOML tables are intended to map to hash tables or dictionaries, as a consequence
+empty quoted keys are allowed (though discouraged). A bare key must be
+non-empty.
 
 ```toml
 = "no key name"           # INVALID
